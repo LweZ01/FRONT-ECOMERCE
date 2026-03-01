@@ -24,7 +24,7 @@ const UserDropDown = () => {
             >
                 <div className="w-10 rounded-full">
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                        src="https://avatars.githubusercontent.com/u/144471422?s=400&u=3b9979fec256da1a6007731d76c0209858250e7c&v=4"
                         alt="avatar"
                     />
                 </div>
