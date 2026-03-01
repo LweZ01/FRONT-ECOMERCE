@@ -34,15 +34,6 @@ const UserDropDown = () => {
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow"
             >
                 <li>
-                    <a className="justify-between">
-                        Perfil
-                        <span className="badge">Nuevo</span>
-                    </a>
-                </li>
-                <li>
-                    <a className="justify-between">Configuración</a>
-                </li>
-                <li>
                     <a onClick={handleLogout} className="justify-between">
                         Cerrar sesión
                     </a>
