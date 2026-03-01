@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
-import { registerService } from '../../services/authServices'
+import { registerService } from '../../Services/authServices'
 import { useUser } from '../../Context/UserContext'
 import { Navigate } from 'react-router'
 import toast from 'react-hot-toast'
@@ -24,7 +24,7 @@ const RegisterForm = () => {
             data,
             reset,
             setRedirect,
-            checkSession
+            checkSession,
         )
 
         if (result.message) {

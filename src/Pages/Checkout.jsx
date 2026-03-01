@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useCart } from '../Context/CartContext'
 import { useUser } from '../Context/UserContext'
-import { createOrder } from '../services/orderServices'
+import { createOrder } from '../Services/orderServices'
 import { useNavigate } from 'react-router'
 import toast from 'react-hot-toast'
 
@@ -80,7 +80,7 @@ const Checkout = () => {
             if (response.success && response.paymentUrl) {
                 // Mostrar mensaje de éxito
                 toast.success(
-                    'Orden creada con éxito. Redirigiendo a Mercado Pago...'
+                    'Orden creada con éxito. Redirigiendo a Mercado Pago...',
                 )
 
                 // Guardar el carrito en sessionStorage como respaldo
@@ -88,7 +88,7 @@ const Checkout = () => {
 
                 // Limpiar la URL de posibles espacios en blanco
                 const cleanUrl = response.paymentUrl.trim()
-                
+
                 // Redirigir a Mercado Pago después de un breve delay
                 setTimeout(() => {
                     window.location.href = cleanUrl
